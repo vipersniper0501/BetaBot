@@ -1,0 +1,6 @@
+= BetaBot
+
+This is the repository for my simple Discord bot that I use for my clubs to
+announce upcoming events at a predetermined time.
+
+It can also create a todo list for each independent user.
