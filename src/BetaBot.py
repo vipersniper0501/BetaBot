@@ -25,7 +25,7 @@ async def on_ready():
 
 
 async def background_tasks():
-    with open("reminders.json") as f:
+    with open("../reminders.json") as f:
             reminders = json.load(f)    # List of dates and times for meetings
     channel = client.get_channel(751738418253529098)  # CyberPatriots Announcements Channel
     while True:
@@ -78,7 +78,7 @@ async def background_tasks():
   
 @client.event
 async def on_message(message):
-    storage_file = pathlib.Path("list_store.json")
+    storage_file = pathlib.Path("../list_store.json")
     if storage_file.is_file():
         with open(storage_file) as f:
             BETA_Taskmaster = json.load(f)
@@ -99,7 +99,7 @@ async def on_message(message):
             content = BETA_Taskmaster[str(message.author.id)]['Tasks']
             taskID = str(len(content))
             content[f"{taskID}"] = message.content[len(add_prefix) + 1:].strip()
-            with open("list_store.json", mode = 'w') as f:
+            with open("../list_store.json", mode = 'w') as f:
                 json.dump(BETA_Taskmaster, f, indent = 4)
             await message.channel.send('Stored Item')
             print('Item Successfully Stored')
@@ -108,7 +108,7 @@ async def on_message(message):
             content = BETA_Taskmaster[str(message.author.id)]['Tasks']
             taskID = str(len(content))
             content[f"{taskID}"] = message.content[len(add_prefix) + 1:].strip()
-            with open("list_store.json", mode = 'w') as f:
+            with open("../list_store.json", mode = 'w') as f:
                 json.dump(BETA_Taskmaster, f, indent = 4)
             await message.channel.send('Item Successfully Stored')
             print('Item Successfully Stored')
@@ -131,7 +131,7 @@ async def on_message(message):
                 f"{i}"] = buffer  # Rebuilds key with value stored in buffer, and adds the value to the end of the dictionary.
             print(content)
             # After loop completes, dictionary stored in JSON file should now be ordered correctly.
-        with open("list_store.json", mode = 'w') as f:
+        with open("../list_store.json", mode = 'w') as f:
             json.dump(BETA_Taskmaster, f, indent = 4)
         await message.channel.send('Item Successfully Removed!')
        
@@ -178,7 +178,7 @@ async def on_message(message):
         await message.channel.send(embed = embed)
       
     if message.content == '--BETA-Reminder' or message.content == '--BETA-Reminders':
-        with open("reminders.json") as f:
+        with open("../reminders.json") as f:
             reminders = json.load(f)
         print(reminders)
         pp = pprint.PrettyPrinter(indent=4, sort_dicts=False)
@@ -198,7 +198,7 @@ async def on_message(message):
 
 
 def main():
-    with open('./token.txt') as f:
+    with open('../token.txt') as f:
         token = f.read().strip()
 #    client = BetaBot()
     client.run(token)
