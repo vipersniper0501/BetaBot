@@ -1,0 +1,84 @@
+{
+  "Monday": {
+      "Time": "17:25:00", 
+      "Role": {
+          "name": "Python",
+          "id": "755131467369021541"
+      },
+      "Meeting": "https://meet.google.com/okj-ssxy-wfm"
+  },
+  "Wednesday": {
+      "Time": "17:25:00", 
+      "Role": {
+          "name": "Networking",
+          "id": "758720525152813078"
+      }, 
+      "Meeting": "(Meeting link can be found in RAM CyberPatriot Server)"
+  },
+  "Thursday": {
+      "Time": "17:25:00", 
+      "Role": {
+          "name": "Linux", 
+          "id": "758720494073282590"
+      }, 
+      "Meeting": "https://meet.google.com/mjg-hxbr-yws"
+  },
+  "Friday": {
+      "Time": "16:55:00", 
+      "Role": {
+          "name": "Bash", 
+          "id": "758721223562887169"
+      },
+      "Meeting": "https://meet.google.com/ryb-uyjz-tze"
+  },
+  "Saturday": {
+      "Time": "17:55:00", 
+      "Role": {
+          "name": "Pentesting", 
+          "id": "764441890745483276"
+      },
+      "Meeting": "https://meet.google.com/xmt-oaxk-dyd"
+  },
+  "Competition Rounds": {
+      "Practice Round": {
+        "Last Meeting": "Tuesday, October 13, 2020",
+        "Competition Round": {
+            "Start": "Thursday, October 22, 2020",
+            "End": "Monday, November 9, 2020"
+        },
+        "Status": "Running"
+      },
+      "Round 1": {
+        "Last Meeting": "Tuesday, November 10, 2020",
+        "Competition Round": {
+            "Start": "Friday, November 13, 2020",
+            "End": "Sunday, November 15, 2020"
+        },
+        "Status": "Not Started"
+      },
+      "Round 2": {
+        "Last Meeting": "Tuesday, December 8, 2020",
+        "Competition Round": {
+            "Start": "Friday, December 11, 2020",
+            "End": "Sunday, December 13, 2020"
+        }, 
+        "Status": "Not Started"
+      },
+      "Round 3 / Semi-Finals": {
+        "Last Meeting": "Tuesday, January 19, 2021",
+        "Competition Round": {
+            "Start": "Friday, January 22, 2021",
+            "End": "Saturday, January 23, 2021"
+        }, 
+        "Status": "Not Started"
+      },
+      "National Finals": {
+        "Last Meeting": "Tuesday, March 9, 2021",
+        "Competition Round": {
+            "Start": "Thursday, March 18, 2021",
+            "End": "Monday, March 22, 2021"
+        }, 
+        "Status": "Not Started"
+      }
+  }
+}
